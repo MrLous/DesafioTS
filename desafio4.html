@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Desafio ts 04</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; flex-direction: column">
+        <div style="display: flex;">
+            <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+                <input id="login" placeholder="Login" onchange="preencherLogin()">
+                <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha()">
+                <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+                <button id="login-button">Login</button>
+            </div>
+            <div id="search-container" style="margin-left: 20px">
+                <input id="search" placeholder="Escreva...">
+                <button id="search-button">Pesquisar Filme</button>
+            </div>
+        </div>
+        <div style="display: flex; width: 600px; height: 300px; justify-content: space-between; flex-direction: column;">
+            <label id="Pesquisa"> . . .</label>
+        </div>
+        <div style="display: flex; width: 100px; height: 45px; justify-content: space-between; flex-direction: column;">
+            <button id="add-button">Add Filme</button>
+            <button id="del-button">Del Filme</button>
+        </div>
+    </div>
+
+</body>
+
